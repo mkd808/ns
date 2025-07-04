@@ -121,7 +121,7 @@ export default function EvoPage() {
               <div className="flex-1 text-[#dad7cd] text-base font-mono">
                 <strong>
                   <button className="mt-6 px-6 py-2 bg-[#f5f5f5] text-[#181815] font-mono uppercase rounded transition hover:bg-[#dad7cd] hover:text-[#181815]">
-                    Our Company.
+                  Our Company.
                   </button>
                   <br />
                   <br />
@@ -196,6 +196,11 @@ export default function EvoPage() {
           <br />
         </motion.p>
       </div>
+      <div className="flex justify-center">
+  <button className="mt-6 px-6 py-2 bg-[#f5f5f5] text-[#181815] font-mono uppercase rounded transition hover:bg-[#dad7cd] hover:text-[#181815]">
+    Are you ready to take the Next Step?
+  </button>
+</div>
 
       {/* FOOTER (STATIC, NO ANIMATION) */}
       <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />

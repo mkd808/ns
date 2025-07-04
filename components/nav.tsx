@@ -69,7 +69,7 @@ export default function Nav() {
       {/* Fullscreen Overlay Menu */}
 {/* Fullscreen Overlay Menu */}
 {open && (
-  <div className="fixed inset-0 bg-black/85 z-70 flex flex-col items-start px-8 py-8">
+  <div className="fixed inset-0 bg-black/95 z-70 flex flex-col items-start px-8 py-8">
     {/* Close (X) icon */}
     <button
       className="mb-12 text-3xl text-gray-300 hover:text-white"

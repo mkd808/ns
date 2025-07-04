@@ -127,9 +127,12 @@ export default function EvoPage() {
                   <br />
                   <a href="mailto:sales@nsis.com.au">sales@nsis.com.au</a>
                 </strong>
-                <p className="mt-4">
-                  Are you ready to take the Next Step?
-                </p>
+                <div className="flex">
+  <button className="mt-6 px-6 py-2 bg-[#f5f5f5] text-[#181815] font-mono uppercase rounded transition hover:bg-[#dad7cd] hover:text-[#181815]">
+    Are you ready to take the Next Step?
+  </button>
+</div>
+
               </div>
             </div>
           </motion.div>
