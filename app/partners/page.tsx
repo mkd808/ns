@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Navbar from "../../components/nav";
-
+import Footer from "../../components/footer";
 
 // Partner logo images
 const partnerImages = [
@@ -168,8 +168,10 @@ export default function EvoPage() {
             </div>
           </motion.div>
         </div>
-      </section>
 
+ {/* FOOTER (STATIC, NO ANIMATION) */}
+ <Footer  />
+      </section>
 
     </div>
   );

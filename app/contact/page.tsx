@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Navbar from "../../components/nav";
-
+import Footer from "../../components/footer";
 
 export default function EvoPage() {
   return (
@@ -137,8 +137,10 @@ export default function EvoPage() {
             </div>
           </motion.div>
         </div>
+             {/* FOOTER (STATIC, NO ANIMATION) */}
+ <Footer  />
       </section>
-    
+
     </div>
   );
 }
