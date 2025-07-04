@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Navbar from "../../components/nav";
-import Footer from "../../components/footer";
+
 
 export default function EvoPage() {
   return (
@@ -204,9 +204,6 @@ export default function EvoPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* FOOTER (STATIC, NO ANIMATION) */}
-      <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />
     </div>
   );
 }

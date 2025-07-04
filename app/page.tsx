@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Navbar from "../components/nav";
-import Footer from "../components/footer";
+
 
 export default function EvoPage() {
   // Section 3 animation setup
@@ -202,8 +202,6 @@ export default function EvoPage() {
   </button>
 </div>
 
-      {/* FOOTER (STATIC, NO ANIMATION) */}
-      <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />
     </div>
   );
 }
