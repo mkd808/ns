@@ -3,7 +3,32 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Not my Job application.. necessarily.
+
+Open up Terminal
+
+make a new folder 
+
+mkdir ns
+
+cd ns
+
+clone site
+
+git clone https://github.com/mkd808/ns.git
+
+npm install
+
+npm run dev
+
+
+View website via localhost port 3000
+   ▲ Next.js 15.3.5 (Turbopack)
+   - Local:        http://localhost:3000
+
 First, run the development server:
+
+
 
 ```bash
 npm run dev
