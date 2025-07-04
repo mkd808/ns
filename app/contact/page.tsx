@@ -107,18 +107,7 @@ export default function EvoPage() {
           <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
             ABN: 11633735369
           </div>
-                    {/* Google Maps iframe embed */}
-          <div className="mt-6 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              title="Google Map - 8 Binney Rd"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              src="https://maps.google.com/maps?q=8+Binney+Rd,+Kings+Park+NSW+2148&output=embed"
-            />
-          </div>
+
         </div>
         <div className="flex-1 text-[#dad7cd] text-base font-mono">
           <strong>
