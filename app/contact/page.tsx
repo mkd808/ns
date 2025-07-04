@@ -89,40 +89,53 @@ export default function EvoPage() {
         </div>
       </section>
 
-      {/* SECTION 2 */}
       <section className="w-full min-h-[35vh] bg-[#181815] flex flex-col items-center justify-center px-4 py-16">
-        <div className="w-full max-w-4xl max-w-[90vw] mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h2 className="font-mono text-[#dad7cd] text-lg uppercase tracking-widest mb-4">
-              Next Step Infrastructure Services Pty Ltd
-            </h2>
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="flex-1">
-                <div className="font-anton text-4xl md:text-5xl text-white uppercase leading-tight mb-2">
-                  8 Binney Rd, Kings Park NSW 2148
-                </div>
-                <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
-                  ABN: 11633735369
-                </div>
-              </div>
-              <div className="flex-1 text-[#dad7cd] text-base font-mono">
-                <strong>
-                  <a href="tel:1800101015">1800 10 10 15</a>
-                  <br />
-                  <a href="mailto:sales@nsis.com.au">sales@nsis.com.au</a>
-                </strong>
-                <p className="mt-4">
-                  Are you ready to take the Next Step?
-                </p>
-              </div>
-            </div>
-          </motion.div>
+  <div className="w-full max-w-4xl max-w-[90vw] mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <h2 className="font-mono text-[#dad7cd] text-lg uppercase tracking-widest mb-4">
+        Next Step Infrastructure Services Pty Ltd
+      </h2>
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex-1">
+          <div className="font-anton text-4xl md:text-5xl text-white uppercase leading-tight mb-2">
+            8 Binney Rd, Kings Park NSW 2148
+          </div>
+          <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
+            ABN: 11633735369
+          </div>
+          <div className="mt-6 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              title="Google Map - 8 Binney Rd"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              src="https://maps.google.com/maps?q=8+Binney+Rd,+Kings+Park+NSW+2148&output=embed"
+            />
+          </div>
         </div>
-      </section>
+        <div className="flex-1 text-[#dad7cd] text-base font-mono">
+          <strong>
+            <a href="tel:1800101015">1800 10 10 15</a>
+            <br />
+            <a href="mailto:sales@nsis.com.au">sales@nsis.com.au</a>
+          </strong>
+          <p className="mt-4">
+            Are you ready to take the Next Step?
+          </p>
+          {/* Google Maps iframe embed */}
+
+        </div>
+      </div>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* FOOTER (STATIC, NO ANIMATION) */}
       <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />
