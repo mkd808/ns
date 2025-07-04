@@ -121,6 +121,7 @@ export default function EvoPage() {
               <div className="flex-1 text-[#dad7cd] text-base font-mono">
                 <strong>
                   Our Company.<br />
+                  <br />
                   Next Step Infrastructure Services is a close-knit team of Information technology professionals with over 30 collective years of industry experience within the Australian business market. Our mission is to provide a comprehensive range of products and services to accommodate the needs of small to medium, enterprise and government customers.
                 </strong>
                 <p className="mt-4">
@@ -184,8 +185,8 @@ export default function EvoPage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="font-anton text-[22px] text-[#dad7cd] uppercase leading-tight text-center font-bold"
         >
-          We always find the very best products<br />
-          and services to fit all your needs,<br />
+          We always find the very best<br />
+          products and services to fit all your needs,<br />
           and most importantly, your budget.
           <span className="block" style={{ height: "3em" }} />
           <br />
