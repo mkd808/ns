@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Navbar from "../components/nav";
-import Footer from "../components/footer";
+import Navbar from "../../components/nav";
+
 export default function EvoPage() {
   // Section 3 animation setup
   const section3Ref = useRef(null);
@@ -193,8 +193,27 @@ export default function EvoPage() {
       </div>
 
       {/* FOOTER (STATIC, NO ANIMATION) */}
-      <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />
-
+      <div className="w-full h-[90px] flex items-center justify-center bg-[#f5f5f5]">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+          <span className="text-[#181815] font-mono uppercase text-[12px] ">
+            NSIS Pty Ltd.
+          </span>
+          <a
+            href="tel:1800101015"
+            className="text-[#2242a3] underline font-mono ext-[12px] ml-4"
+            style={{ whiteSpace: 'nowrap' }}
+          >
+            1800 10 10 15
+          </a>
+          <a
+            href="mailto:sales@nsis.com.au"
+            className="text-[#1db2a6] underline font-mono ext-[12px] ml-4"
+            style={{ whiteSpace: 'nowrap' }}
+          >
+            sales@nsis.com.au
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
