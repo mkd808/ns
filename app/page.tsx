@@ -6,6 +6,7 @@ import { useRef } from "react";
 import Navbar from "../components/nav";
 import Footer from "../components/footer";
 export default function EvoPage() {
+  
   // Section 3 animation setup
   const section3Ref = useRef(null);
   const isSection3InView = useInView(section3Ref, { once: true, margin: "-100px" });
@@ -28,12 +29,12 @@ export default function EvoPage() {
     autoPlay
     muted
     playsInline
-    className="w-full h-full object-cover opacity-90"
+    className="w-full h-full object-cover opacity-40"
     style={{ objectPosition: "center" }}
   >
     Your browser does not support the video tag.
   </video>
-  <div className="absolute inset-0 bg-black/40" />
+  <div className="absolute inset-0 bg-white/60" />
 </div>
 
         {/* Hero text */}
@@ -53,7 +54,7 @@ export default function EvoPage() {
     className="w-full h-full flex items-center justify-center"
   >
     <Image
-      src="/whiteorangelrg-logo-2.svg"
+      src="/lrg-logo-2.svg"
       alt="NSIS Logo"
       width={330}
       height={80}
@@ -73,11 +74,11 @@ export default function EvoPage() {
     font-mono
     uppercase
     text-center
-    text-[13.6px]
+    text-[16.6px]
     font-medium
     leading-[16.32px]
     tracking-[1.36px]
-    text-[#dad7cd]
+    text-[#171713]
     opacity-100
     block
     mb-4
@@ -120,16 +121,15 @@ export default function EvoPage() {
               </div>
               <div className="flex-1 text-[#dad7cd] text-base font-mono">
                 <strong>
-                  Our Company.<br />
+                <button className="mt-6 px-6 py-2 bg-[#f5f5f5] text-[#181815] font-mono uppercase rounded transition hover:bg-[#dad7cd] hover:text-[#181815]">
+                Our Company.
+                </button><br />
                   <br />
                   Next Step Infrastructure Services is a close-knit team of Information technology professionals with over 30 collective years of industry experience within the Australian business market. Our mission is to provide a comprehensive range of products and services to accommodate the needs of small to medium, enterprise and government customers.
                 </strong>
                 <p className="mt-4">
                   We assist organisations by delivering industry leading recommendations and solutions to satisfy business requirements, working closely with our customers, in collaboration with our technology vendors and channel partners to provide the most efficient and effective hosting services for any business platform.
                 </p>
-                <button className="mt-6 px-6 py-2 bg-[#f5f5f5] text-[#181815] font-mono uppercase rounded transition hover:bg-[#dad7cd] hover:text-[#181815]">
-                  About Next Step Infrastructure Services
-                </button>
               </div>
             </div>
           </motion.div>
@@ -139,7 +139,7 @@ export default function EvoPage() {
       {/* SECTION 3 */}
       <section
         ref={section3Ref}
-        className="w-full min-h-[0vh] bg-[#11110f] flex flex-col items-center justify-center px-4 py-16"
+        className="w-full min-h-[0vh] bg-[#DAD7CD] flex flex-col items-center justify-center px-4 py-16"
       >
         <div className="w-full max-w-4xl max-w-[90vw] mx-auto">
           <motion.div
@@ -150,7 +150,7 @@ export default function EvoPage() {
             <div className="flex flex-col md:flex-row-reverse gap-8 items-start">
               {/* Headline Block (right on md+) */}
               <div className="flex-1 md:text-right">
-                <div className="font-anton text-4xl md:text-5xl text-white uppercase leading-tight mb-2">
+                <div className="font-anton text-4xl md:text-5xl text-[#171713 uppercase leading-tight mb-2">
                   We are a complete 
                 </div>
                 <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
@@ -159,16 +159,16 @@ export default function EvoPage() {
               </div>
               {/* Text Content (left on md+) */}
               <div className="flex-1 md:text-left">
-                <p className="text-[#dad7cd] font-mono text-base font-mono">
+                <p className="text-[#171713] font-mono text-base font-mono">
                   <strong>
                     Providing all the required tools, interconnectivity, communication, and infrastructure for your business to not only stay connected but operate both effectively and efficiently. Our team works with you to create solutions that deliver productivity and savings.
                   </strong>
                 </p>
-                <p className="text-[#dad7cd] font-mono text-base mb-4">
+                <p className="text-[#171713] font-mono text-base mb-4">
                   <br />
                   Our solutions are based on technology and service elements which are tailored to address customer and industry challenges.
                 </p>
-                <p className="text-[#dad7cd] font-mono text-base mb-4">
+                <p className="text-[#171713] font-mono text-base mb-4">
                   Our consultative and technological approach to understanding your needs, coupled with our proven expertise across a broad range of IT Infrastructure technologies and extensive experience with solving migration and implementation problems, positions us uniquely to build the best solutions for your business.
                 </p><br />
               </div>
@@ -178,7 +178,7 @@ export default function EvoPage() {
       </section>
 
       {/* BUDGET STATEMENT (Animated on scroll into view) */}
-      <div ref={budgetRef} className="w-full h-[15vh] flex items-center justify-center">
+      <div ref={budgetRef} className="w-full h-[20vh] flex items-center justify-center">
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={isBudgetInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}

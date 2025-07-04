@@ -90,41 +90,51 @@ export default function EvoPage() {
       </section>
 
       <section className="w-full min-h-[35vh] bg-[#181815] flex flex-col items-center justify-center px-4 py-16">
-  <div className="w-full max-w-4xl max-w-[90vw] mx-auto">
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-    >
-      <h2 className="font-mono text-[#dad7cd] text-lg uppercase tracking-widest mb-4">
-        Next Step Infrastructure Services Pty Ltd
-      </h2>
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex-1">
-          <div className="font-anton text-4xl md:text-5xl text-white uppercase leading-tight mb-2">
-            8 Binney Rd, Kings Park NSW 2148
-          </div>
-          <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
-            ABN: 11633735369
-          </div>
-
+        <div className="w-full max-w-4xl max-w-[90vw] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h2 className="font-mono text-[#dad7cd] text-lg uppercase tracking-widest mb-4">
+              Next Step Infrastructure Services Pty Ltd
+            </h2>
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="flex-1">
+                <div className="font-anton text-4xl md:text-5xl text-white uppercase leading-tight mb-2">
+                  8 Binney Rd, Kings Park NSW 2148
+                </div>
+                <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight mb-4">
+                  ABN: 11633735369
+                </div>
+                {/* Responsive Google Maps iframe */}
+                <div className="w-full h-[350px] rounded-lg overflow-hidden mb-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6635.35277201245!2d150.90578947701138!3d-33.74318337327494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1298d86280b279%3A0x14566bb2a332c3b7!2s8%20Binney%20Rd%2C%20Kings%20Park%20NSW%202148!5e0!3m2!1sen!2sau!4v1751666926520!5m2!1sen!2sau"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="8 Binney Rd Map"
+                  />
+                </div>
+              </div>
+              <div className="flex-1 text-[#dad7cd] text-base font-mono">
+                <strong>
+                  <a href="tel:1800101015">1800 10 10 15</a>
+                  <br />
+                  <a href="mailto:sales@nsis.com.au">sales@nsis.com.au</a>
+                </strong>
+                <p className="mt-4">
+                  Are you ready to take the Next Step?
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
-        <div className="flex-1 text-[#dad7cd] text-base font-mono">
-          <strong>
-            <a href="tel:1800101015">1800 10 10 15</a>
-            <br />
-            <a href="mailto:sales@nsis.com.au">sales@nsis.com.au</a>
-          </strong>
-          <p className="mt-4">
-            Are you ready to take the Next Step?
-          </p>
-
-
-        </div>
-      </div>
-    </motion.div>
-  </div>
-</section>
+      </section>
       {/* FOOTER (STATIC, NO ANIMATION) */}
       <Footer company="NSIS Pty Ltd" phone="1800 10 10 15" email="sales@nsis.com.au" />
     </div>

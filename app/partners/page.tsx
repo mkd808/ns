@@ -2,8 +2,39 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import Navbar from "../../components/nav";
 import Footer from "../../components/footer";
+
+// Partner logo images
+const partnerImages = [
+  { src: "/hp_icon_130911.svg", alt: "HP Icon" },
+  { src: "/sophos_icon_146050.svg", alt: "Sophos Icon" },
+  { src: "/supermicro_logo_icon_249480.svg", alt: "Supermicro Icon" },
+  { src: "/veeam_logo_icon_249280.svg", alt: "Veeam Icon" },
+  { src: "/proxmox_logo_icon_144960.svg", alt: "Proxmox Icon" },
+];
+
+function PartnerCarousel() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % partnerImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="rounded-xl w-[100px] h-[100px] mb-6 overflow-hidden bg-white flex items-center justify-center">
+      <img
+        src={partnerImages[index].src}
+        alt={partnerImages[index].alt}
+        className="w-full h-full object-contain transition-all duration-500"
+      />
+    </div>
+  );
+}
 
 export default function EvoPage() {
   return (
@@ -105,30 +136,35 @@ export default function EvoPage() {
                   Our Partners
                 </div>
                 <div className="font-anton text-4xl md:text-5xl text-[#e5a738] uppercase leading-tight">
-                  Certified Golf Partners
+                  Certified Gold Partners
                 </div>
               </div>
-              <div className="flex-1 text-[#dad7cd] text-base font-mono">
-                <strong>
-                  <a href="https://www.sophos.com/en-us">Sophos</a>
-                  <br />
-                  <a href="https://www.fs.com/au">FibreStore</a>
-                  <br />
-                  <a href="https://www.supermicro.com/en/">SuperMicro</a>
-                  <br />
-                  <a href="https://www.hpe.com/us/en/home.html">HP</a>
-                  <br />
-                  <a href="https://www.proxmox.com/">Proxmox</a>
-                  <br />
-                  <a href="https://www.veeam.com/">Veeam</a>
-                  <br />
-                  <a href="https://www.3cx.com/">3CX</a>
-                  <br />
-                </strong>
-                <p className="mt-4">
-                  & Many more
-                </p>
+              {/* --- Carousel and Partners List --- */}
+              <div className="flex-1 flex flex-col">
+                <PartnerCarousel />
+                <div className="text-[#dad7cd] text-base font-mono w-full">
+                  <strong>
+                    <a href="https://www.sophos.com/en-us">Sophos</a>
+                    <br />
+                    <a href="https://www.fs.com/au">FibreStore</a>
+                    <br />
+                    <a href="https://www.supermicro.com/en/">SuperMicro</a>
+                    <br />
+                    <a href="https://www.hpe.com/us/en/home.html">HP</a>
+                    <br />
+                    <a href="https://www.proxmox.com/">Proxmox</a>
+                    <br />
+                    <a href="https://www.veeam.com/">Veeam</a>
+                    <br />
+                    <a href="https://www.3cx.com/">3CX</a>
+                    <br />
+                  </strong>
+                  <p className="mt-4">
+                    & Many more
+                  </p>
+                </div>
               </div>
+              {/* --- End Carousel and Partners List --- */}
             </div>
           </motion.div>
         </div>

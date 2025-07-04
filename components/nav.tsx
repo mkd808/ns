@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/5 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black/100 backdrop-blur-md">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between px-8 py-4">
           {/* Hamburger Icon */}
           <button
