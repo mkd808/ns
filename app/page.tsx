@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Navbar from "../components/nav";
-
+import Footer from "../components/footer";
 
 export default function EvoPage() {
   // Section 3 animation setup
@@ -201,7 +201,8 @@ export default function EvoPage() {
     Are you ready to take the Next Step?
   </button>
 </div>
-
+ {/* FOOTER (STATIC, NO ANIMATION) */}
+ <Footer  />
     </div>
   );
 }
